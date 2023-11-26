@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="app">
+                <h1>Quiz</h1>
+                <div class="quiz">
+                    {% for quest in questions %}
+                    
+
+                        
+                    
+                        <div id="question">{{quest.question}}</div>
+                            
+                            <div id="answer.buttons">
+                                        
+                                        <button id="slNo">{{length}}</button>
+                                        <button id="btn1" onclick="getOption()">{{quest.answer1}}</button>
+                                        <button id="btn2" onclick="getOption2()">{{quest.answer2}}</button>
+                                        <button id="btn3" onclick="getOption3()">{{quest.answer3}}</button>
+                                        <button id="btn4" onclick="getOption4()">{{quest.answer4}}</button>
+                                        <button id="ans_btn">{{quest.correct}}</button>
+                                        <button id="demo">status</button>
+                     
+                                        
+                                        <!-- <input type="button"  name="next-btn"  "value="NEXT"> -->
+                                       
+                                        
+                            </div>
+                            
+                        </div>
+                    {% endfor %}
+                    <!-- pagination for disply page by page
+                    <div class="pagination">
+                        <span class="step-links">
+                            {% if page_obj.has_previous %}
+                                <a href="?page=1">&laquo; first</a>
+                                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                            {% endif %}
+                    
+                            <span class="current">
+                                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                            </span>
+                    
+                            {% if page_obj.has_next %}
+                                <a href="?page={{ page_obj.next_page_number }}">next</a>
+                                <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                            {% endif %}
+                        </span>
+                    </div> -->
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+
+</html>

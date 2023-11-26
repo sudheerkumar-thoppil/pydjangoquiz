@@ -1,0 +1,67 @@
+.body{
+    background-color: rgb(99, 75, 235);
+}
+.app{
+    background-color: white;
+    width: 90%;
+    max-width: 750px;
+    border-radius: 10px;
+   
+    
+}
+.app h1{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+#btn1, #btn2, #btn3, #btn4, #demo, #btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 750px;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    
+}
+.correct{
+    background: green;
+}
+.incorrect{
+    background: red;
+}
+#ans_btn{
+    display:none;
+}
+
+.demo{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 750px;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
